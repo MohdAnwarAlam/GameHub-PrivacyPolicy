@@ -3,66 +3,94 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Privacy Policy - Mini Games Hub</title>
 <style>
-  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 24px 18px 56px; color: #1b1e33; background: #fafaff; }
-  h1 { font-size: 1.8rem; margin-bottom: .2rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; color: #4a30c9; }
-  .meta { color: #555a7a; font-size: .95rem; }
-  .box { background: #eef0ff; border-radius: 12px; padding: 14px 16px; margin: 18px 0; }
-  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
-  td, th { border: 1px solid #cfd3ee; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #e6e8f7; }
+  :root { --bg:#f4f5fc; --card:#fff; --text:#12152a; --muted:#515678; --line:#dfe2f4; --accent:#5b3fe0; --soft:#eceaff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b0f1e; --card:#151a30; --text:#f2f4ff; --muted:#9aa3c7; --line:#2a3156; --accent:#a493ff; --soft:#1f2546; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.65; color:var(--text); background:var(--bg); }
+  header { background:linear-gradient(135deg,#7c5cff,#25d0c6); color:#fff; padding:40px 20px 56px; text-align:center; }
+  .logo { display:grid; grid-template-columns:repeat(2,26px); gap:6px; justify-content:center; margin-bottom:14px; }
+  .logo i { width:26px; height:26px; border-radius:7px; display:block; }
+  .logo i:nth-child(1){background:#7c5cff;box-shadow:0 0 0 2px rgba(255,255,255,.5)} .logo i:nth-child(2){background:#25d0c6;box-shadow:0 0 0 2px rgba(255,255,255,.5)}
+  .logo i:nth-child(3){background:#ffb547} .logo i:nth-child(4){background:#ff5c8a}
+  h1 { margin:0; font-size:1.9rem; } header p { margin:.3rem 0 0; opacity:.92; }
+  main { max-width:760px; margin:-32px auto 0; padding:0 16px 56px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin-bottom:16px; }
+  .facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px; }
+  .facts div { background:var(--soft); border-radius:12px; padding:10px 14px; font-size:.92rem; }
+  .facts b { display:block; color:var(--muted); font-weight:600; font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; }
+  .summary { border-left:5px solid #25d0c6; }
+  h2 { font-size:1.1rem; margin:0 0 .6rem; color:var(--accent); }
+  p, li { color:var(--text); } ul { padding-left:1.2rem; margin:.4rem 0; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; font-size:.93rem; }
+  td, th { border-bottom:1px solid var(--line); padding:9px 8px; text-align:left; vertical-align:top; }
+  th { color:var(--muted); font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; }
+  footer { text-align:center; color:var(--muted); font-size:.85rem; padding-bottom:30px; }
 </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p class="meta"><strong>App:</strong> Mini Games Hub (Android, package <code>com.praveen.minigameshub</code>)<br>
-<strong>Publisher:</strong> Anwar Alam<br>
-<strong>Effective date:</strong> 1 January 2027<br>
-<strong>Contact:</strong> <a href="mailto:alamanwar367@gmail.com">alamanwar367@gmail.com</a></p>
+<header>
+  <div class="logo"><i></i><i></i><i></i><i></i></div>
+  <h1>Privacy Policy</h1>
+  <p>Mini Games Hub for Android</p>
+</header>
+<main>
+  <div class="card facts">
+    <div><b>Publisher</b>Anwar Alam</div>
+    <div><b>Effective date</b>1 January 2027</div>
+    <div><b>Contact</b><a href="mailto:alamanwar367@gmail.com">alamanwar367@gmail.com</a></div>
+    <div><b>App</b>Mini Games Hub (<code>com.praveen.minigameshub</code>)</div>
+  </div>
 
-<div class="box"><strong>In short:</strong> Mini Games Hub works completely offline. It has no internet access, no accounts, no ads and no analytics.
-We do not collect, transmit, sell or share any personal information. Everything the app remembers stays on your phone.</div>
+  <div class="card summary"><h2>In short</h2>
+    <p>Mini Games Hub works completely offline. It has no internet access, no accounts, no ads and no analytics.
+    We do not collect, transmit, sell or share any personal information. Everything the app remembers stays on your phone.</p></div>
 
-<h2>1. What the app stores on your device</h2>
-<p>To work properly the app saves the following in its own private storage on your device:</p>
-<table>
-<tr><th>Data</th><th>Why</th></tr>
-<tr><td>Settings (music and sound on/off, volumes, selected music track, vibration, theme)</td><td>To remember your preferences.</td></tr>
-<tr><td>Game progress (unlocked levels, saved games, best scores, play statistics)</td><td>So you can continue a game and see your records.</td></tr>
-<tr><td>Optional profile: a display name, an avatar choice, or a profile photo you pick</td><td>To personalise the app. The photo is chosen with the Android system photo picker; the app receives only that one picture and keeps a small cropped copy in its private storage.</td></tr>
-</table>
-<p>This data never leaves your device. The app has no network permission, so it technically cannot send it anywhere.</p>
+  <div class="card"><h2>1. What the app stores on your device</h2>
+    <p>To work properly the app saves the following in its own private storage on your device:</p>
+    <table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr><td>Settings (music and sound on/off, volumes, selected music track, vibration, theme)</td><td>To remember your preferences.</td></tr>
+    <tr><td>Game progress (unlocked levels, saved games, best scores, play statistics)</td><td>So you can continue a game and see your records.</td></tr>
+    <tr><td>Optional profile: a display name, an avatar choice, or a profile photo you pick</td><td>To personalise the app. The photo is chosen with the Android system photo picker; the app receives only that one picture and keeps a small cropped copy in its private storage.</td></tr>
+    </table>
+    <p>This data never leaves your device. The app has no network permission, so it technically cannot send it anywhere.</p></div>
 
-<h2>2. Information we do not collect</h2>
-<p>We do not collect your name, e-mail address, phone number, location, contacts, device identifiers, advertising ID, usage analytics or crash reports. The app does not use
-the camera, microphone, contacts, location or storage permissions.</p>
+  <div class="card"><h2>2. Information we do not collect</h2>
+    <p>We do not collect your name, e-mail address, phone number, location, contacts, device identifiers, advertising ID, usage analytics or crash reports. The app does not use
+    the camera, microphone, contacts, location or storage permissions.</p></div>
 
-<h2>3. Third parties</h2>
-<p>The app contains no advertising, analytics, crash-reporting or social SDKs. It uses only open-source Android (AndroidX) and Kotlin libraries for its functionality.
-Because nothing is sent over the network, no data is shared with any third party. If you install the app from Google Play, Google may collect its own information
-as described in Google's privacy policy; that is outside this app.</p>
+  <div class="card"><h2>3. Third parties</h2>
+    <p>The app contains no advertising, analytics, crash-reporting or social SDKs. It uses only open-source Android (AndroidX) and Kotlin libraries for its functionality.
+    Because nothing is sent over the network, no data is shared with any third party. If you install the app from Google Play, Google may collect its own information
+    as described in Google's privacy policy; that is outside this app.</p></div>
 
-<h2>4. Your choices and deleting your data</h2>
-<ul>
-<li><strong>Settings &rarr; Reset game progress</strong> deletes levels, scores, saved games and statistics.</li>
-<li>The Profile screen lets you change or remove your name, avatar and photo.</li>
-<li>Clearing the app's storage in Android settings, or uninstalling the app, removes everything the app saved.</li>
-</ul>
+  <div class="card"><h2>4. Your choices and deleting your data</h2>
+    <ul>
+    <li><strong>Settings &rarr; Reset game progress</strong> deletes levels, scores, saved games and statistics.</li>
+    <li>The Profile screen lets you change or remove your name, avatar and photo.</li>
+    <li>Clearing the app's storage in Android settings, or uninstalling the app, removes everything the app saved.</li>
+    </ul></div>
 
-<h2>5. Children</h2>
-<p>The app is a family-friendly puzzle collection with no ads, no purchases, no chat and no links to other services, and it collects no personal information from anyone,
-including children.</p>
+  <div class="card"><h2>5. Children</h2>
+    <p>The app is a family-friendly puzzle collection with no ads, no purchases, no chat and no links to other services, and it collects no personal information from anyone,
+    including children.</p></div>
 
-<h2>6. Security</h2>
-<p>Data is kept in the app's private storage, which other apps cannot read on a normal, non-rooted Android device. Because the app has no internet access, there is no
-transmission of your data to protect.</p>
+  <div class="card"><h2>6. Security</h2>
+    <p>Data is kept in the app's private storage, which other apps cannot read on a normal, non-rooted Android device. Because the app has no internet access, there is no
+    transmission of your data to protect.</p></div>
 
-<h2>7. Changes to this policy</h2>
-<p>If the app ever changes in a way that affects your privacy (for example by adding online features), this page will be updated first and the effective date above will change.</p>
+  <div class="card"><h2>7. Changes to this policy</h2>
+    <p>If the app ever changes in a way that affects your privacy (for example by adding online features), this page will be updated first and the effective date above will change.</p></div>
 
-<h2>8. Contact</h2>
-<p>Questions about this policy: <a href="mailto:alamanwar367@gmail.com">alamanwar367@gmail.com</a></p>
+  <div class="card"><h2>8. Contact</h2>
+    <p>Questions about this policy: <a href="mailto:alamanwar367@gmail.com">alamanwar367@gmail.com</a></p></div>
+</main>
+<footer>&copy; 2027 Anwar Alam</footer>
 </body>
 </html>
