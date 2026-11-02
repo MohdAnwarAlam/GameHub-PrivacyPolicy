@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Download Mini Games Hub</title>
+<style>
+  :root { --bg:#f4f5fc; --card:#fff; --text:#12152a; --muted:#515678; --line:#dfe2f4; --accent:#5b3fe0; --soft:#eceaff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b0f1e; --card:#151a30; --text:#f2f4ff; --muted:#9aa3c7; --line:#2a3156; --accent:#a493ff; --soft:#1f2546; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; color:var(--text); background:var(--bg); }
+  header { background:linear-gradient(135deg,#7c5cff,#25d0c6); color:#fff; padding:40px 20px 60px; text-align:center; }
+  .logo { display:grid; grid-template-columns:repeat(2,26px); gap:6px; justify-content:center; margin-bottom:14px; }
+  .logo i { width:26px; height:26px; border-radius:7px; display:block; }
+  .logo i:nth-child(1){background:#7c5cff;box-shadow:0 0 0 2px rgba(255,255,255,.5)} .logo i:nth-child(2){background:#25d0c6;box-shadow:0 0 0 2px rgba(255,255,255,.5)}
+  .logo i:nth-child(3){background:#ffb547} .logo i:nth-child(4){background:#ff5c8a}
+  h1 { margin:0; font-size:2rem; } header p { margin:.4rem 0 0; color:#fff; opacity:.95; }
+  main { max-width:640px; margin:-36px auto 0; padding:0 16px 48px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin-bottom:16px; }
+  .btn { display:block; text-align:center; text-decoration:none; color:#fff; font-weight:700; font-size:1.1rem; padding:16px; border-radius:16px; background:linear-gradient(90deg,#7c5cff,#9b5cff); }
+  .meta { text-align:center; color:var(--muted); font-size:.88rem; margin-top:10px; word-break:break-all; }
+  h2 { font-size:1.1rem; margin:0 0 .6rem; color:var(--accent); }
+  ul, ol { padding-left:1.2rem; margin:.3rem 0; } li { margin:.3rem 0; }
+  .games { display:flex; flex-wrap:wrap; gap:8px; }
+  .games span { background:var(--soft); border-radius:20px; padding:6px 14px; font-size:.92rem; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><i></i><i></i><i></i><i></i></div>
+  <h1>Mini Games Hub</h1>
+  <p>Relaxing offline puzzle games in one app. Free. No ads. No internet needed.</p>
+</header>
+<main>
+  <div class="card">
+    <a class="btn" href="MiniGamesHub.apk" download>Download for Android (1764 KB)</a>
+    <div class="meta">Version 0.1.0 &middot; Android 8.0 or newer<br>SHA-256: d4961fb9fd67714a614f1d521e2d5ceb2caa5b9d71ae13550c88d57a6cf76e7e</div>
+  </div>
+  <div class="card"><h2>Games inside</h2>
+    <div class="games"><span>Water Sort</span><span>Block Puzzle</span><span>2048</span><span>Memory Match</span><span>Word Guess (English &amp; Hindi)</span></div>
+    <ul><li>Auto-saves your progress, works fully offline</li><li>Music and sound options, dark and light themes</li><li>No ads, no accounts, no permissions</li></ul></div>
+  <div class="card"><h2>How to install</h2>
+    <ol>
+      <li>Tap <b>Download</b> and open the file when it finishes.</li>
+      <li>If Android asks, allow <b>"Install unknown apps"</b> for your browser (Settings &rarr; Apps &rarr; your browser).</li>
+      <li>Tap <b>Install</b>, then open <b>Mini Games Hub</b>.</li>
+    </ol>
+    <p style="color:var(--muted);font-size:.92rem">This is a test build shared directly (not from Google Play), so Android shows a standard warning for apps installed this way. The app has no internet access and asks for no permissions. See the <a href="../">privacy policy</a>.</p></div>
+  <div class="card"><h2>Feedback</h2><p>Found a bug or have an idea? Write to <a href="mailto:alamanwar367@gmail.com">alamanwar367@gmail.com</a>.</p></div>
+</main>
+</body>
+</html>
